@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+aside {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    font-size: 1.3rem;
+    background-color: #1992d4;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.feed {
+    height: 100vh;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+aside > div {
+    margin-bottom: 30px;
+}
+
+aside > div > p {
+    margin-bottom: 10px;
+}
+
+.aside-text {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.side-content:hover {
+    border-bottom: 1px solid white;
+}
+
+header {
+    grid-row: 1 / 2;
+    background-color: #fff;
+}
+
+input[type="search"] {
+    border-radius: 30px;
+    border: none;
+    background-color: #e2e8f0;
+    width: 50%;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    background-color: #facc15;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.big-profile-picture {
+    width: 55px;
+    height: 55px;
+    background-color: #facc15;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.profile-resume {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.small-account-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.account-name {
+    font-weight: 700;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data-container {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #1992d4;
+    color: #fff;
+    font-size: 1rem;
+    width: 5rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #4dacdf;
+}
+
+.main-content {
+    grid-row: 2 / 5;
+    background-color: #e2e8f0;
+    padding: 15px;
+    height: 82%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 10px;
+}
+
+.proyects {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    grid-column: 1 / 3;
+    gap: 15px;
+}
+
+.content-right {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.announcements,
+.trending {
+    grid-column: 3 / 4;
+}
+
+.projects {
+    grid-column: 1 / 3;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.trending-users {
+    background-color: white;
+    width: 16rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.display-name {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
+}
+
+.full-name {
+    font-size: 0.9rem;
+    color: rgb(99, 98, 98);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.annoucements-article {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    width: 16rem;
+}
+
+.individual-announcement {
+    padding: 5px;
+}
+
+.announcement-content {
+    font-size: 0.7rem;
+}
+
+.announcement-title {
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#firstAnnouncement {
+    border-bottom: 1px solid #9a9b9c;
+}
+
+#third-announcement {
+    border-top: 1px solid #9a9b9c;
+}
+
+.article-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.project-article {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border-left: 10px solid #facc15;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.project-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: black;
+}
+.project-description {
+    font-size: 1rem;
+    color: rgb(99, 98, 98);
+}
+
+.icon-container {
+    text-align: right;
+    margin-right: 10px;
+}
+
+i {
+    cursor: pointer;
+}
+
+i:hover {
+    color: #9a9b9c;
+}
